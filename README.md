@@ -49,6 +49,8 @@ Step 3 : If we want check more details of apk file without opening means.After c
 
      cat apktool.yml
 
+<img width="1580" height="615" alt="apktool" src="https://github.com/CharanCSE02/Reverse-Engineering-APk-file/blob/main/Screenshot%202025-11-25%20132445.png" />
+
 Step 4 : After gather information of apk file we quickly jump in to certification part like public key/private keys usages.
 
     sudo apt install keytool
