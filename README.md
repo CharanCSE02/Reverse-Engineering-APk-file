@@ -34,12 +34,16 @@ Step 1 : After downloading the APK file,we need decompile it by using APKtool.
        sudo apt install apktool
        apktool d filename.apk
 
+<img width="1580" height="615" alt="apktool" src="https://github.com/CharanCSE02/Reverse-Engineering-APk-file/blob/main/Screenshot%202025-11-25%20123752.png" />
+
 Step 2 : Check sha and md5 values of apk file with apk file permission usage.
 
          file filename.apk
          md5sum filename.apk
          shasum filename.apk
          aapt dump badging filename.apk | grep "uses-permission"
+
+<img width="1580" height="615" alt="apktool" src="https://github.com/CharanCSE02/Reverse-Engineering-APk-file/blob/main/Screenshot%202025-11-25%20133151.png" />
 
 Step 3 : If we want check more details of apk file without opening means.After completation of decompile few files create in apk file name directory.In that directory we check apktool.yml file is holding information of apk files.
 
@@ -50,7 +54,11 @@ Step 4 : After gather information of apk file we quickly jump in to certificatio
     sudo apt install keytool
     keytool -printcert -jarfile filename.apk
 
+ <img width="1580" height="615" alt="apktool" src="https://github.com/CharanCSE02/Reverse-Engineering-APk-file/blob/main/Screenshot%202025-11-25%20134110.png" />   
+
 Step 5 : Setting Jadx tool for reverse engineering means loading apk file into it.It providing an interactive platform for exploring the APK’s internal structure, including source code, resources, and manifest files. 
+
+ <img width="1580" height="615" alt="apktool" src="https://github.com/CharanCSE02/Reverse-Engineering-APk-file/blob/main/Screenshot%202025-11-25%20170536.png" /> 
     
 Step 6 : Decompiling hidden file in apk file like resource.rsrc etc.We known that after decompilation of apktool,some files not be decompiled by this.For that we are using unzip tool.
 
@@ -58,7 +66,11 @@ Step 6 : Decompiling hidden file in apk file like resource.rsrc etc.We known tha
     unzip -l filename.apk
     unzip filename.apk
 
+<img width="1580" height="615" alt="apktool" src="https://github.com/CharanCSE02/Reverse-Engineering-APk-file/blob/main/Screenshot%202025-11-25%20132307.png" />     
+
 Step 7 : Setting Ghidra tool for reverse engineering means loading apk file into it.It providing an interactive platform for exploring the APK’s internal structure, classes.dev.
+
+<img width="1580" height="615" alt="apktool" src="https://github.com/CharanCSE02/Reverse-Engineering-APk-file/blob/main/Screenshot%202025-11-25%20164924.png" />    
 
 # Key findings
 
